@@ -1,0 +1,12 @@
+# Personal config — never commit
+config.json
+
+# Auto-generated files — never commit
+config/.zshrc
+config/.gitconfig
+config/.gitignore_global
+config/.ssh/config
+config/.ssh/
+
+# Standard
+.DS_Store

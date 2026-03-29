@@ -1,0 +1,93 @@
+{
+  "git": {
+    "accounts": [
+      {
+        "name": "Your Name",
+        "email": "you@personal.com",
+        "host_alias": "github.com-personal",
+        "key_name": "id_ed25519_personal",
+        "default": true
+      },
+      {
+        "name": "Your Work Name",
+        "email": "you@company.com",
+        "host_alias": "github.com-work",
+        "key_name": "id_ed25519_work",
+        "default": false
+      }
+    ]
+  },
+  "node": {
+    "version": "lts",
+    "fallback": "lts"
+  },
+  "python": {
+    "version": "latest",
+    "fallback": "latest"
+  },
+  "gcloud": {
+    "enabled": false
+  },
+  "brew": {
+    "packages": {
+      "defaults": [
+        "git", "gh", "jq", "direnv",
+        "wget", "tree", "htop", "ripgrep", "fzf"
+      ],
+      "extras": []
+    },
+    "casks": {
+      "defaults": [
+        "visual-studio-code",
+        "iterm2"
+      ],
+      "extras": []
+    }
+  },
+  "npm_globals": {
+    "enabled": true,
+    "packages": []
+  },
+  "pip_globals": {
+    "enabled": true,
+    "packages": []
+  },
+  "mas": {
+    "enabled": false,
+    "apps": []
+  },
+  "manual_installs": [],
+  "aliases": {
+    "git": {
+      "gs": "git status",
+      "ga": "git add .",
+      "gc": "git commit -m",
+      "gp": "git push",
+      "gpl": "git pull",
+      "gl": "git log --oneline --graph --decorate",
+      "gco": "git checkout",
+      "gcb": "git checkout -b"
+    },
+    "shell": {
+      "ls": "ls -la",
+      "..": "cd ..",
+      "...": "cd ../..",
+      "reload": "source ~/.zshrc",
+      "zshconfig": "code ~/.zshrc",
+      "dotfiles": "cd ~/dotfiles"
+    },
+    "custom": {}
+  },
+  "gitignore_global": [
+    ".DS_Store",
+    ".env",
+    ".env.local",
+    "node_modules/",
+    "*.log",
+    ".idea/",
+    ".vscode/",
+    "__pycache__/",
+    "*.pyc",
+    ".pytest_cache/"
+  ]
+}
